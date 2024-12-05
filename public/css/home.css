@@ -1,0 +1,137 @@
+
+.content {
+    position: relative;
+    margin: 0;
+    z-index: 2; /* Pastikan konten di atas gambar */
+    color: white; 
+    color: white; 
+}
+
+.number {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2; /* Pastikan nomor di atas gambar */
+    color: white; /* Ubah warna teks jika perlu */
+    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang semi-transparan */
+    padding: 5px 10px; /* Tambahkan padding untuk nomor */
+    border-radius: 5px; /* Tambahkan border-radius untuk sudut yang halus */
+}
+
+.isi-home {
+    margin-top: 100px;
+}
+
+.background {
+    height: 400px;
+  }
+  
+  .owl-carousel .relative {
+    position: relative;
+  }
+  
+  .owl-carousel .absolute {
+    width: 40%;
+    max-height: 70%;
+    overflow: hidden;
+  }
+
+  .owl-nav .owl-prev, .owl-nav .owl-next{
+    position: absolute;
+    background-color: #842A2A!important;
+    color: #FFF6DF;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%!important;
+    top: 30%;
+    font-size: 30px!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+.owl-nav .owl-prev{
+    left: -20px;
+}
+.owl-nav .owl-next{
+    right: -20px;
+}
+
+.background {
+    height: 100vh; /* Full height */
+  }
+  
+  .card-1 {
+    right: 2rem; /* Jarak dari sisi kanan layar */
+    top: 25%; /* Posisi card sekitar 1/4 tinggi layar */
+    width: 30%; /* Lebar card */
+  }
+
+
+    .stars i {
+        color: #FFD700;
+        margin-right: 2px;
+    }
+    .section-carousel2 h2 {
+        color: #d63384;
+    }
+    .owl-nav .fa-chevron-left, .owl-nav .fa-chevron-right {
+        color: #d63384;
+        font-size: 24px;
+    }
+    .owl-dots .owl-dot span {
+        background: #d63384;
+    }
+      
+    .wrapper{
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .nama{
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      -webkit-text-stroke: 6px #FFF6DF;
+  }
+
+  .text p{
+      color: #FFF6DF;
+  }
+
+  .text a{
+      color: #842A2A;
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-size: large;
+      font-style: normal;
+  }
+
+  .poster{
+      width: 70%;
+      margin-left: 15%;
+  }
+  .poster img{
+      height: 70%; 
+  }
+  
+
+  .gambar {
+      position: relative;
+      height: 100%; 
+  }
+  .donut-item img {
+      display: block;
+      margin: auto;
+    }
+
+
+  @media (max-width: 768px) {
+    .absolute {
+      width: 90%; /* Responsif untuk layar kecil */
+      right: 5%; /* Jarak lebih kecil di layar kecil */
+      top: 20%; /* Card lebih ke tengah pada layar kecil */
+    }
+  }
+  
+  

@@ -1,0 +1,670 @@
+body{
+    background-color: #F6B0BB;
+}
+
+footer{
+width: 100%;
+bottom: 0px;
+position: relative; 
+background-color: transparent !important;
+}
+
+
+.warna{
+background-color: #842A2A;
+}
+
+.subs{
+    position: relative;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .info-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+}
+
+/* contact style */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Tienne', serif;
+}
+
+body{
+background-color: #FFC6C6 !important;
+}
+/* Section Styling */
+.form-container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+flex: 1 0 auto;
+}
+
+
+/* Container Styling */
+.container {
+display: flex; 
+justify-content: space-between;
+width: 80%; 
+height: 90vh; 
+margin: 50px 0;
+border-radius: 25px; 
+overflow: hidden; 
+}
+
+
+.contactInfo, .contactForm {
+flex: 1;
+height: 100%;
+}
+
+.contactInfo {
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contactInfo iframe {
+width: 100%;
+height: 100%;
+}
+
+.container .contactForm h2 {
+padding-bottom: 10px;
+}
+
+.contactForm {
+background: #FEA8B6;
+}
+
+.contactForm .input {
+background-color: #FEA8B6;
+}
+
+/* Info Section */
+.container .contactInfo ul.info li span a {
+color: #fff;
+text-decoration: none;
+width: 30px;
+min-width: 30px;
+}
+
+.container .contactInfo ul.info li span:nth-child(1) img {
+max-width: 100%;
+filter: invert(1);
+}
+
+.container .contactInfo ul.info li span:nth-child(2) {
+color: #fff;
+margin-left: 10px;
+font-weight: 300;
+}
+
+/* Social Icons */
+.container .contactInfo ul.sci {
+position: relative;
+display: flex;
+}
+
+.container .contactInfo ul.sci li {
+list-style: none;
+margin-right: 15px;
+}
+
+.container .contactInfo ul.sci li a {
+text-decoration: none;
+}
+
+.container .contactInfo ul.sci li a img {
+filter: invert(1);
+}
+
+/* Contact Form Styling */
+.container .contactForm {
+padding: 40px 10px;
+padding-left: 10px;
+width: 50%;
+height: 100%;
+background: #FFFFEC;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+padding: 50px;
+}
+
+.container .contactForm h2 {
+color: #842A2A;
+font-size: 24px;
+font-weight: 500;
+}
+
+.container .contactForm .formBox {
+position: relative;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-top: 10px;
+}
+
+.container .contactForm .formBox .inputBox {
+position: relative;
+margin-bottom: 35px;
+}
+
+.container .contactForm .formBox .inputBox.w50 {
+width: 47%;
+}
+
+.container .contactForm .formBox .inputBox.w100 {
+width: 100%;
+}
+
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea {
+width: 100%;
+resize: none;
+padding: 5px 0;
+font-size: 18px;
+font-weight: 300;
+color: #F1E4C3;
+border: none;
+outline: none;
+border-radius: 10px;
+background-color: #FEA8B6;
+
+}
+
+.container .contactForm .formBox .inputBox textarea {
+height: 130px;
+}
+
+.container .contactForm .formBox .inputBox input{
+height: 43px;
+}
+
+.container .contactForm .formBox .inputBox span {
+position: absolute;
+left: 0;
+padding: 5px 0;
+pointer-events: none;
+font-size: 15px;
+font-weight: 300;
+transition: 0.3s;
+color: white;
+padding-left: 10px;
+justify-content: center;
+padding-top: 12px;
+}
+
+.container .contactForm .formBox .inputBox input[type="text"]{
+padding: 12px;
+border: none ;
+color: white;
+}
+
+.container .contactForm .formBox .inputBox input:focus ~ span,
+.container .contactForm .formBox .inputBox input:valid ~ span,
+.container .contactForm .formBox .inputBox textarea:focus ~ span,
+.container .contactForm .formBox .inputBox textarea:valid ~ span {
+transform: translateY(-34px);
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 1px;
+color: #842A2A;
+}
+
+/* Submit Button */
+.container .contactForm .formBox .inputBox input[type="submit"] {
+position: relative;
+cursor: pointer;
+background: #FEA8B6;
+border-radius: 15px;
+color: #fff;
+border: none;
+max-width: 150px;
+padding: 8px;
+}
+
+.container .contactForm .formBox .inputBox input[type="submit"]:hover {
+background: #4f7248;
+}
+
+/* Container 2 (Other Section) */
+.container2 {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.place {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+border-radius: 10px;
+padding: 20px;
+}
+
+.place-item {
+flex: 1;
+min-width: 200px;
+text-align: center;
+margin: 10px;
+}
+
+.place-item img {
+max-width: 100%;
+border-radius: 10px;
+}
+
+.place-item h1 i {
+font-size: 50px;
+width: 80px;
+height: 80px;
+background-color: #ffffff;
+color: #000;
+border-radius: 50px;
+line-height: 80px;
+text-align: center;
+border: solid 1px #000;
+}
+
+.place-item p {
+font-size: 14px;
+padding-top: 10px;
+color: #333;
+}
+
+.container, .formBox {
+overflow: visible;
+}
+
+.card-box{
+margin-bottom: 35px;
+width: 100%;
+}
+
+.dropdown-container {
+position: relative;
+width: 100%;
+}
+
+.dropdown-toggle {
+width: 100%;
+padding: 10px;
+background-color: #f6b0bb;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:focus{
+outline: none;
+border-color: transparent;
+}
+
+.dropdown-toggle:hover {
+background-color: #faa7b4;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+width: 100%;
+background-color: #f6b0bb;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+margin-top: 10px;
+z-index: 10;
+}
+
+.dropdown-menu.expan {
+display: block;
+}
+
+.dropdown-menu input {
+display: none;
+}
+
+.dropdown-menu label {
+display: block;
+padding: 10px;
+cursor: pointer;
+text-align: center;
+transition: background-color 0.3s ease;
+color: #fff;
+}
+
+.dropdown-menu label:hover {
+background-color: #faa7b4;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+.place {
+flex-direction: column;
+text-align: center;
+}
+.place-item {
+margin-bottom: 20px;
+}
+}
+
+@media (max-width: 1200px) {
+.container {
+width: 90%;
+min-width: auto;
+margin: 20px;
+}
+.container .contactInfo {
+top: 0;
+height: 550px;
+position: relative;
+box-shadow: none;
+border-radius: 22px;
+}
+.container .contactForm {
+position: relative;
+width: calc(100% - 350px);
+padding-left: 0;
+margin-left: 0;
+padding: 40px;
+height: 550px;
+box-shadow: none;
+}
+}
+
+@media (max-width: 991px) {
+section {
+display: flex;
+justify-content: center;
+align-items: flex-start; /* Mengubah align-items agar mulai dari atas */
+min-height: auto; /* Menyesuaikan tinggi otomatis sesuai isi */
+padding: 140px 15px 20px; /* Tambahkan padding atas untuk memberikan jarak */
+background: #FFFFEC;
+}
+
+section::before {
+display: none;
+}
+
+.container {
+display: flex;
+flex-direction: column-reverse;
+height: 150vh;
+}
+
+.container .contactForm {
+width: 100%;
+height: auto; /* Ubah menjadi auto agar menyesuaikan isi */
+border-radius: 0px;
+margin-top: 20px; /* Tambahkan margin untuk memberikan jarak antar elemen */
+}
+
+.container .contactInfo {
+width: 100%;
+height: auto; /* Ubah menjadi auto agar menyesuaikan isi */
+flex-direction: row;
+border-radius: 22px;
+margin-bottom: 20px; /* Tambahkan margin bawah untuk memberikan jarak antar elemen */
+}
+
+.container .contactInfo ul.sci {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-box {
+width: 100%;
+}
+
+.outlet{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+}
+
+
+@media (max-width: 600px) {
+.container .contactForm {
+padding: 25px;
+padding-top: 40px;
+}
+.container .contactInfo {
+padding: 25px;
+flex-direction: column;
+align-items: flex-start;
+}
+.container .contactInfo ul.sci {
+margin-top: 40px;
+}
+.container .contactForm .formBox .inputBox.w50 {
+width: 100%;
+}
+
+.place-item img{
+margin-bottom: 20%;
+}
+
+}
+
+/* home style */
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: "Tienne", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.carousel1 .swiper{
+width: 100%;
+height: 100%;
+}
+
+.carousel1 .swiper-slide {
+display: grid;
+grid-template-columns: repeat(50, 1fr);
+grid-template-rows: repeat(20, 1fr);
+grid-gap: 20px;
+}
+
+.fresh{
+background: hsla(0, 52%, 34%, 0.8);
+color: #fff;
+text-align: center;
+z-index: 2;
+/* display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+padding: 20px; */
+}
+
+.carousel1 .swiper-slide > div:nth-child(1){
+grid-column: 1/54;
+grid-row: 1/20;
+}
+
+.carousel1 .swiper-slide > div:nth-child(2){
+grid-column: 39/50;
+grid-row: 5/18;
+
+}
+
+.carousel1 .swiper-slide > div:nth-child(3){
+grid-column: 44/45;
+grid-row: 14/16;
+color: #fff;
+padding-top: 40px;
+z-index: 4;
+}
+
+.carousel1 .swiper-slide > div:nth-child(4){
+grid-column: 42/48;
+grid-row: 16/18;
+color: #fff;
+z-index: 3;
+
+}
+
+.pagination-btn{
+position: absolute;
+width: calc( 100% - 15% );
+
+}
+
+.pagination-btn div[class^="swiper-button"]::after{
+display: none;
+}
+
+.pagination-btn i{
+font-size: 16px;
+color: #FFF6DF;
+}
+
+.gambar img {
+width: 100%; /* Memenuhi lebar elemen container */
+height: 100%; /* Memenuhi tinggi elemen container */
+object-fit: cover; /* Menjaga proporsi gambar */
+position: relative; /* Jika perlu, pastikan posisinya */
+z-index: 1;
+}
+
+/* style carousel2 */
+.card-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border: 1px solid red;
+    
+}
+
+.carousel2 .swiper{
+    width: calc(100% - 10%);
+    height: 90vh;
+    border: 1px solid yellow;
+    border-radius: 8px;
+
+}
+
+.carousel2 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    transform: none; 
+    overflow: visible; 
+}
+
+.card{
+    background-color: #fff8e8;
+    border-left: 5px solid #842A2A;
+    border-right: 5px solid #842A2A;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, z-index 0.3s;
+    position: relative;
+}
+
+.stars i{
+    color: #842A2A;
+}
+
+hr{
+    border-color: #842A2A;
+}
+
+.card.active{
+    border-top: 5px solid #842A2A; /* Contoh efek */
+    border-bottom: 5px solid #842A2A;
+    border-left: none;
+    border-right: none;
+    transition: transform 0.3s, border-color 0.3s;
+    transform: translateX(0) scale(1.1); /* Tidak bergeser, diperbesar */
+    z-index: 5;
+}
+
+
+.card.left {
+transform: translateX(50px) scale(1); /* Bergeser ke kiri */
+z-index: 3; /* Di bawah elemen tengah */
+}
+
+.card.right {
+transform: translateX(-50px) scale(1); /* Bergeser ke kanan */
+z-index: 2; /* Di bawah elemen tengah */
+}
+
+.carousel2 .swiper-pagination-bullet{
+background-color: #842A2A;
+}
+
+.pagination_{
+position: absolute;
+width: calc( 100% );
+
+}
+
+.pagination_ div[class^="swiper-button"]::after{
+display: none;
+}
+
+.pagination_ i{
+font-size: 35px;
+color: #842A2A;
+}
+
+.pagination_ .swiper-btn-next {
+margin-left: 10px; /* Tambahkan jarak tombol Next */
+}
+
+.pagination_ .swiper-btn-prev {
+margin-right: 10px; /* Tambahkan jarak tombol Prev */
+}
+
+/* form sign in style */
+.form-signin{
+background-image: url(images/pinkdonut.jpeg);
+}
+
+.signin{
+/* width: 70%; */
+background-color: #F6B0BB;
+}
+
+/* services style */
+.services-text h1{
+background-color: hsla(0, 52%, 34%, 10%);
+width: fit-content;
+border-radius: 20px; 
+}
+
+@media (max-width: 1120px) {
+  
+}

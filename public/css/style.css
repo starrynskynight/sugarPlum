@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #F6B0BB;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.navigation {
+    background-color: #F6B0BB;
+    width: 100%;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 50px;
+}
+.navigation > .container-nav {
+    max-width: 100%;
+    background-color: #F6B0BB;
+    margin: auto;
+}
+.navigation .navbar {
+    position: relative;
+    height: 80px;
+}
+.navigation .navbar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation .navbar .logo-toggle-container .logo-buton .menu-nav ul li {
+    height: 80px;
+}
+.navigation .navbar .logo-toggle-container a{
+    display: block;
+    margin-bottom: 5px;
+}
+.navigation .navbar .logo-toggle-container a img {
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    border-radius: 50%;  
+}
+.navigation .menu-nav {
+    text-align: right;
+}
+.logo-button {
+    position: fixed;
+    right: 100px;
+    top: 24px; 
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-button i {
+    font-size: 20px;
+    color: #FFF6DF;
+    z-index: 589;
+}
+
+.logo-button button {
+    background-color: #f06292;
+    color: #FFF6DF;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo-button button:hover {
+    background-color: #ec407a;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    position: relative; 
+    background-color: transparent !important;
+}
+.warna{
+    background-color: #842A2A;
+}
+
+.subs{
+        position: relative;
+        text-align: center;
+    }
+
+
+    @media (max-width: 600px) {
+        .info-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+    }
+
+
+@media  screen and (min-width:1024px){
+    .navigation .menu-nav{
+        display: block !important;
+        height: 100px !important;
+    }
+    
+    
+}
+
+.navigation .menu-nav li {
+    display: inline-block;
+    padding: 15px 10px ;
+}
+.navigation .menu-nav li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #FFF6DF;
+    font-size: 16px;
+}
+.navigation .menu-nav li:nth-child(1),
+.navigation .menu-nav li:nth-child(2),
+.navigation .menu-nav li:nth-child(3),
+.navigation .menu-nav li:nth-child(4) {
+    float: left;
+}
+.navigation .menu-nav li:hover a {
+    background-color: palevioletred;
+    color: #FFF6DF;
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation .menu-nav {
+        display: block !important; /* Menampilkan menu secara default pada ukuran 1024px dan lebih besar */
+       
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navigation .navbar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+    .navigation .navbar .logo-toggle-container a {
+        width: 50%;
+        margin-right: 5px;
+    }
+    .navigation .navbar .logo-toggle-container a img {
+        width: 50px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        
+    }
+    .navigation .menu-nav li:nth-child(1) {
+        padding-left: 0px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 45px;
+        background: #FFF6DF;
+        padding: 15px 9px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box span {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        height: 2px;
+        background-color: #ec407a;
+        margin-bottom: 4px;
+    }
+    .navigation .navbar .logo-toggle-container .toggle-box span:last-child {
+        margin-bottom: 0;
+    }
+    .navigation .menu-nav {
+        text-align: center;
+        display: none; /* Menyembunyikan menu pada ukuran di bawah 1024px */
+    }
+    .navigation .menu-nav li {
+        display: block;
+        float: none !important;
+        padding: 0 10px;
+        border-bottom: 1px solid #FFF6DF;
+    }
+    .logo-button {
+        margin-right: auto;
+    }
+    
+}

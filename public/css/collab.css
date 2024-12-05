@@ -1,0 +1,233 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+  z-index: 1;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-container .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Aktifkan Flexbox */
+  justify-content: center; /* Posisi horizontal di tengah */
+  align-items: center; /* Posisi vertikal di tengah */
+  text-align: center; /* Teks rata tengah */
+}
+
+.teks-ccp {
+  color: #FFF6DF;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+@media (max-width: 880px) {
+  .teks-ccp {
+    font-size: 24px; /* Sesuaikan ukuran font */
+  }
+}
+
+@media (max-width: 600px) {
+  .teks-ccp {
+    font-size: 20px; /* Ukuran lebih kecil di layar kecil */
+  }
+}
+
+.section-special {
+  padding: 50px 20px;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #f8e8e8; /* Warna putih kekuningan */
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.image-special {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-special img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay gelap */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-overlay h2 {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-overlay p {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .text-overlay h2 {
+    font-size: 20px;
+  }
+
+  .text-overlay p {
+    font-size: 12px;
+  }
+}
+
+
+.container {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 340px;
+  background: #FFF6DF;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: width 0.5s ease; /* Animasi expand */
+  cursor: pointer;
+}
+
+.card.expanded {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.card .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 340px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease; /* Transisi pergantian konten */
+}
+.card .front .image-idol {
+  padding: 15px;
+  padding-bottom: 10px;
+}
+.card .front h3 {
+  background-color: #FE91A2;
+  text-align: center;
+  margin-left: 0;
+  padding: 5px 0;
+}
+
+.card .back {
+  background: #FE91A2;
+  margin: 0;
+  padding: 0;
+  opacity: 0; /* Awalnya tidak terlihat */
+  pointer-events: none;
+}
+
+.card.expanded .back h3 {
+  background-color: #FE91A2;
+  text-align: center;
+  width: 100%;
+  margin-left: 0;
+  padding: 5px 0;
+}
+
+.card.expanded .back .card-contain {
+  display: flex;
+  padding: 15px;
+}
+.card.expanded .back .image-idol {
+  padding: 0px;
+  padding-bottom: 5px;
+}
+.card.expanded .back .card-contain .image-idol img {
+  width: 220px;
+  height: 275px;
+}
+
+.card.expanded .back .card-contain .message {
+  max-width: 250px;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  margin: auto 0;
+}
+
+.card.expanded .back {
+  opacity: 1; /* Tampilkan konten belakang */
+}
+
+.card.expanded .front {
+  opacity: 0; /* Sembunyikan konten depan */
+}
