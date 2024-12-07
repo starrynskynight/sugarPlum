@@ -48,7 +48,7 @@
                 <div class="services-text">
                 <h1 class="text-3xl text-white">Delivery</h1>
                 <hr class="w-64" style="border-color: #842A2A; margin-top: 30px;">
-                <p class="pt-6" style="color: #842A2A;"><b>Event Catering</b> dari Sugar Plum menawarkan layanan penyediaan hidangan yang elegan dan lezat untuk berbagai acara spesial Anda. Kami menghadirkan pilihan menu yang beragam, mulai dari kue hingga hidangan penutup, yang dirancang untuk menciptakan pengalaman tak terlupakan bagi tamu Anda. Dengan perhatian terhadap detail dan kualitas terbaik, kami siap membantu menyempurnakan momen istimewa Anda.</p>
+                <p class="pt-6" style="color: #842A2A;">Sugar Plum menawarkan layanan pengantaran langsung untuk memastikan produk kami sampai ke tangan Anda dengan kualitas terbaik. Nikmati berbagai pilihan kue, roti, dan hidangan penutup yang dikemas rapi dan diantar dengan cepat, sehingga Anda dapat merasakan kelezatan tanpa harus keluar rumah. Kami berkomitmen memberikan kenyamanan dan kepuasan dalam setiap pengiriman, menjadikan setiap momen lebih manis dengan Sugar Plum.</p>
                 </div>
             </div>
         </div>
@@ -62,9 +62,9 @@
 
             <div class="teks flex justify-center items-center order-first ml-6">
                 <div class="services-text">
-                <h1 class="text-3xl text-white">Event Catering</h1>
+                <h1 class="text-3xl text-white">Internal Delivery</h1>
                 <hr class="w-64" style="border-color: #842A2A; margin-top: 30px;">
-                <p class="pt-6" style="color: #842A2A;"><b>Event Catering</b> dari Sugar Plum menawarkan layanan penyediaan hidangan yang elegan dan lezat untuk berbagai acara spesial Anda. Kami menghadirkan pilihan menu yang beragam, mulai dari kue hingga hidangan penutup, yang dirancang untuk menciptakan pengalaman tak terlupakan bagi tamu Anda. Dengan perhatian terhadap detail dan kualitas terbaik, kami siap membantu menyempurnakan momen istimewa Anda.</p>
+                <p class="pt-6" style="color: #842A2A;">Untuk kebutuhan acara internal perusahaan atau tim, Sugar Plum menghadirkan layanan pengantaran khusus. Kami menyediakan berbagai pilihan sajian premium, dari camilan hingga dessert, yang dapat diantar langsung ke lokasi Anda. Dengan layanan internal delivery ini, kami membantu menciptakan suasana kerja yang lebih hangat dan berkesan melalui sajian berkualitas terbaik.</p>
                 </div>
             </div>
         </div>

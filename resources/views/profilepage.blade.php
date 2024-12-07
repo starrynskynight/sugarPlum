@@ -8,9 +8,27 @@
 @endpush
 
 @section('content')
+<div class="relative w-full overflow-hidden">
+  <img class="block w-full object-cover " src="{{ asset('img/pastry-baker.jpg')}}">
+</div>
+
+  <div class="container2 rounded-3xl mt-24 grid grid-cols-2 gap-9 p-9 order-last mx-10" style="background-color: #FFC6C6;">
+            
+    <div class="flex justify-center items-center h-full">
+      <div class="services-text">
+        <h1 class="text-5xl text-white">VISI</h1>
+        <hr class="w-40" style="border-color: #842A2A; margin-top: 30px;">
+        <p class="pt-6 text-xl" style="color: #842A2A;">Menjadi bakery yang dikenal dan dicintai oleh konsumen karena menghadirkan kebahagiaan dalam setiap gigitan, cookies berkualitas tinggi, serta berkomitmen untuk berinovasi dan menjaga kepuasan pelanggan di setiap kesempatan.</p>
+      </div>
+    </div>
+
+    <div class="teks flex justify-center items-center order-first ">
+      <img src="{{asset('img/bake-roti.png')}}" class="block rounded-xl" style="max-width: 90%; max-height: 100%;" alt="">
+    </div>
+  </div>
 
 <div class="container-profile">
-  <div class="card">
+  <div class="card card1">
     <div class="card-content">
       <div class="number">01</div>
       <div class="title">Menggunakan Bahan Bahan Lokal</div>
@@ -20,7 +38,7 @@
       <button class="toggle-btn">Read More</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card card2">
     <div class="card-content">
       <div class="number">02</div>
       <div class="title">Mengurangi Dampak Lingkungan</div>
@@ -30,7 +48,7 @@
       <button class="toggle-btn">Read More</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card card3">
     <div class="card-content">
       <div class="number">03</div>
       <div class="title">Memperluas Jangkauan Pasar</div>
@@ -40,7 +58,7 @@
       <button class="toggle-btn">Read More</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card card4">
     <div class="card-content">
       <div class="number">04</div>
       <div class="title">Membangun Hubungan Erat Dengan Pelanggan</div>
