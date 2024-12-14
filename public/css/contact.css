@@ -1,19 +1,28 @@
+/* contact style */
 * {
-    margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tienne', serif;
 }
 
 body{
     background-color: #FFC6C6 !important;
+    
 }
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
 /* Section Styling */
 .form-container {
-    margin-top: 80px;
     display: flex;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-top: 50px;
     min-height: 100vh;
     flex: 1 0 auto;
 }
@@ -24,12 +33,19 @@ body{
     display: flex; 
     justify-content: space-between;
     width: 80%; 
-    height: 90vh; 
+    height: 100vh !important; 
     margin: 50px 0;
     border-radius: 25px; 
     overflow: hidden; 
 }
 
+.container .contactInfo{
+    height: 100vh;
+}
+
+.container .contactForm{
+    height: 100vh;
+}
 
 .contactInfo, .contactForm {
     flex: 1;
@@ -39,6 +55,7 @@ body{
 .contactInfo {
     padding: 0;
     display: flex;
+    margin: 0;
     align-items: center;
     justify-content: center;
 }
@@ -49,7 +66,9 @@ body{
 }
 
 .container .contactForm h2 {
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .contactForm {
@@ -100,14 +119,13 @@ body{
 
 /* Contact Form Styling */
 .container .contactForm {
-    padding: 40px 10px;
     padding-left: 10px;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background: #FFFFEC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 50px;
+    padding: 20px;
 }
 
 .container .contactForm h2 {
@@ -121,12 +139,12 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .container .contactForm .formBox .inputBox {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .container .contactForm .formBox .inputBox.w50 {
@@ -152,12 +170,65 @@ body{
    
 }
 
+.inputBox {
+    position: relative;
+    margin-bottom: 20px; /* Beri jarak antar input */
+}
+
+.error-text {
+    display: none; /* Sembunyikan elemen */
+    color: red;
+    font-size: 0.875rem;
+}
+.inputBox.error .error-text {
+    display: block; /* Tampilkan saat ada error */
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 100px;
+    font-size: 14px !important;
+    color: #fff !important;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.inputBox label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #842A2A;
+}
+
+.inputBox .error-icon {
+    display: none; /* Sembunyikan secara default */
+    color: red; /* Warna ikon */
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Selaraskan ikon dengan teks */
+}
+
+.container .contactForm .formBox .inputBox input::-webkit-input-placeholder{
+	color: #f0ecec;
+}
+
+.container .contactForm .formBox .inputBox textarea::-webkit-input-placeholder{
+	color: #f0ecec;
+}
+
 .container .contactForm .formBox .inputBox textarea {
     height: 130px;
+    padding: 12px !important;
+    font-size: 14px !important;
+    border: none;
+    color: white !important;
 }
 
 .container .contactForm .formBox .inputBox input{
     height: 43px;
+    padding: 12px !important;
+    border: none;
+    color: white;
 }
 
 .container .contactForm .formBox .inputBox span {
@@ -174,18 +245,13 @@ body{
     padding-top: 12px;
 }
 
-.container .contactForm .formBox .inputBox input[type="text"]{
-    padding: 12px;
-    border: none ;
-    color: white;
-}
 
 .container .contactForm .formBox .inputBox input:focus ~ span,
 .container .contactForm .formBox .inputBox input:valid ~ span,
 .container .contactForm .formBox .inputBox textarea:focus ~ span,
 .container .contactForm .formBox .inputBox textarea:valid ~ span {
     transform: translateY(-34px);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #842A2A;
@@ -195,16 +261,18 @@ body{
 .container .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
-    background: #FEA8B6;
+    background: #583138;
     border-radius: 15px;
     color: #fff;
     border: none;
+    align-items: center;
+    margin: auto;
     max-width: 150px;
     padding: 8px;
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background: #842A2A;
+    background: #F6B0BB !important;
 }
 
 /* Container 2 (Other Section) */
@@ -334,12 +402,13 @@ body{
 @media (max-width: 1200px) {
     .container {
         width: 90%;
+        height: 100vh !important;
         min-width: auto;
         margin: 20px;
     }
     .container .contactInfo {
         top: 0;
-        height: 550px;
+        height: 100vh !important;
         position: relative;
         box-shadow: none;
         border-radius: 22px;
@@ -350,7 +419,7 @@ body{
         padding-left: 0;
         margin-left: 0;
         padding: 40px;
-        height: 550px;
+        height: 100vh !important;
         box-shadow: none;
     }
 }

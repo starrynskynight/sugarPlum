@@ -80,82 +80,15 @@
 </div>
 
 <div class="menu-content">
-    <h1>OUR SPECIAL MENU FOR TODAY</h1>
-    <div class="owl-carousel owl-theme container-menu">
-            <div class="card">
-                <div class="card-image">
-                    <img src="{{ asset ('img/matcha_mochi.png')}}" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Mochi Crisp</h3>
-                    <div class="container-card">
-                    <h2>Rp26.000</h2>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="{{ asset ('img/matcha_mochi.png')}}" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Mochi Crisp</h3>
-                    <div class="container-card">
-                    <h2>Rp26.000</h2>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="{{ asset ('img/matcha_mochi.png')}}" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Mochi Crisp</h3>
-                    <div class="container-card">
-                    <h2>Rp26.000</h2>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="{{ asset ('img/matcha_mochi.png')}}" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Mochi Crisp</h3>
-                    <div class="container-card">
-                    <h2>Rp26.000</h2>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="{{ asset ('img/matcha_mochi.png')}}" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Mochi Crisp</h3>
-                    <div class="container-card">
-                    <h2>Rp26.000</h2>
-                    <div class="plus">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     @foreach($categories as $category)
         <div class="{{ strtolower($category->name) }}-container" id="{{ strtolower($category->name) }}">
-            <h1>{{ $category->name }}</h1>
+            <h1 style="color: #FFF6DF; ">
+            @if(strtolower(trim($category->name)) === 'special menu')
+                Our Special Menu for Today!
+            @else
+                {{ $category->name }}
+            @endif
+            </h1>
             <div class="owl-carousel owl-theme container-menu">
                 @foreach($category->products as $product)
                     <div class="card">

@@ -5,6 +5,14 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: #F6B0BB;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -123,23 +131,37 @@ footer{
 }
 .navigation .menu-nav li a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 15px; 
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
     color: #FFF6DF;
     font-size: 16px;
+    position: relative; }
+
+.navigation .menu-nav li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px; 
+    width: 0;
+    height: 2px; 
+    background-color: #ec407a;
+    transition: width 0.3s ease; 
+    transform-origin: center; }
+
+.navigation .menu-nav li:hover a::after {
+    width: 100%; 
 }
+
 .navigation .menu-nav li:nth-child(1),
 .navigation .menu-nav li:nth-child(2),
 .navigation .menu-nav li:nth-child(3),
 .navigation .menu-nav li:nth-child(4) {
     float: left;
 }
-.navigation .menu-nav li:hover a {
-    background-color: palevioletred;
-    color: #FFF6DF;
-}
+
+
 
 @media screen and (min-width: 1024px) {
     .navigation .menu-nav {

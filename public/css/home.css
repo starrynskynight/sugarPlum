@@ -1,147 +1,265 @@
-* {
-    box-sizing: border-box;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-.content {
-    position: relative;
-    margin: 0;
-    z-index: 2; /* Pastikan konten di atas gambar */
-    color: white; 
-    color: white; 
-    width: 100%;
-}
-
-.number {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2; /* Pastikan nomor di atas gambar */
-    color: white; /* Ubah warna teks jika perlu */
-    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang semi-transparan */
-    padding: 5px 10px; /* Tambahkan padding untuk nomor */
-    border-radius: 5px; /* Tambahkan border-radius untuk sudut yang halus */
-}
-
-.isi-home {
-    margin-top: 100px;
-}
-
-.background {
-    height: 400px;
-  }
-  
-  .owl-carousel .relative {
-    position: relative;
-  }
-  
-  .owl-carousel .absolute {
-    width: 40%;
-    max-height: 70%;
-    overflow: hidden;
-  }
-
-  .owl-nav .owl-prev, .owl-nav .owl-next{
-    position: absolute;
-    background-color: #842A2A!important;
-    color: #FFF6DF;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%!important;
-    top: 30%;
-    font-size: 30px!important;
-    display: flex!important;
-    justify-content: center;
-    align-items: center;
-}
-.owl-nav .owl-prev{
-    left: -20px;
-}
-.owl-nav .owl-next{
-    right: -20px;
-}
-
-.background {
-    height: 100vh; /* Full height */
-  }
-  
-  .card-1 {
-    right: 2rem; /* Jarak dari sisi kanan layar */
-    top: 25%; /* Posisi card sekitar 1/4 tinggi layar */
-    width: 30%; /* Lebar card */
-  }
-
-
-    .stars i {
-        color: #FFD700;
-        margin-right: 2px;
-    }
-    .section-carousel2 h2 {
-        color: #d63384;
-    }
-    .owl-nav .fa-chevron-left, .owl-nav .fa-chevron-right {
-        color: #d63384;
-        font-size: 24px;
-    }
-    .owl-dots .owl-dot span {
-        background: #d63384;
-    }
-      
-    .wrapper{
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .nama{
-      font-family: "Lilita One", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      -webkit-text-stroke: 6px #FFF6DF;
-  }
-
-  .text p{
-      color: #FFF6DF;
-  }
-
-  .text a{
-      color: #842A2A;
-      font-family: "Lilita One", sans-serif;
-      font-weight: 400;
-      font-size: large;
-      font-style: normal;
-  }
-
-  .poster{
-      width: 70%;
-      margin-left: 15%;
-  }
-  .poster img{
-      height: 70%; 
-  }
-  
-
-  .gambar {
+html,
+    body {
       position: relative;
-      height: 100%; 
-  }
-  .donut-item img {
-      display: block;
-      margin: auto;
+      height: 100%;
     }
 
-
-  @media (max-width: 768px) {
-    .absolute {
-      width: 90%; /* Responsif untuk layar kecil */
-      right: 5%; /* Jarak lebih kecil di layar kecil */
-      top: 20%; /* Card lebih ke tengah pada layar kecil */
+    body {
+      background: #F6B0BB;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      font-family: "Tienne", serif;
+      font-weight: 400;
+      font-style: normal;  
     }
-  }
-  
-  
+
+    .wrapper{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .owl-dots{
+        display: none;
+    }
+    
+    .kiri{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        -webkit-text-stroke: 6px #FFF6DF;
+    }
+    
+        .text p{
+            color: #FFF6DF;
+        }
+    
+        .text a{
+            color: #842A2A;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-size: large;
+            font-style: normal;
+        }
+        .text a:hover{
+            background-color: #f7ebba;
+            text-decoration: none;
+        }
+    
+        .poster{
+            width: 70%;
+            margin-left: 15%;
+        }
+        .poster img{
+            height: 70%;
+            border: 8px solid rgb(255 251 235); 
+        }
+        
+    
+        .gambar {
+            position: relative;
+            height: 100%; 
+        }
+        .donut-item img {
+            display: block;
+            margin: auto; 
+        }
+        
+
+    /* carousel1 */
+    .mySwiper .swiper-slide {
+        display: grid;
+        grid-template-columns: repeat(50, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+        grid-gap: 20px;
+      }
+
+      .swiper-wrapper{
+        height: 100vh !important;
+        width: 100%;
+      }
+      
+      .mySwiper .fresh {
+        background: hsla(0, 52%, 34%, 0.8);
+        color: #fff;
+        text-align: center;
+        z-index: 2;
+      }
+      
+      .mySwiper .swiper-slide > div:nth-child(2) {
+        grid-column: 37/48;
+        grid-row: 5/18;
+        z-index: 2;
+      }
+      
+      .mySwiper .swiper-slide > div:nth-child(3) {
+        grid-column: 42/43;
+        grid-row: 14/16;
+        color: #fff;
+        padding-top: 40px;
+        z-index: 4;
+      }
+      
+      .mySwiper .swiper-slide > div:nth-child(4) {
+        grid-column: 40/46;
+        grid-row: 16/18;
+        color: #fff;
+        z-index: 3;
+      }
+      
+      .mySwiper .foto img {
+        width: 100%; 
+        height: 100vh; 
+        object-fit: cover; 
+        position: absolute; 
+        z-index: 1;
+      }
+      
+      
+          .pagination-btn{
+              position: absolute;
+              width: calc( 100% - 90% );
+              z-index: 5;
+              right: 180px;
+              transform: translate(20%);
+              
+          }
+      
+          .pagination-btn div[class^="swiper-button"]::after{
+              display: none;
+          }
+      
+          .pagination-btn i{
+              font-size: 16px;
+              color: #FFF6DF;
+          }
+      
+
+/* carousel2 */
+section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}   
+
+        .swiper-carousel2{
+            width: calc(100% - 10%);
+            height: calc(100vh);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        section .swiper-slide{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            transform: none; 
+            overflow: visible; 
+        }
+
+        .card{
+            background-color: #fff6df;
+            border-radius: 10px;
+            border-left: 5px solid #842A2A;
+            border-right: 5px solid #842A2A;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease, z-index 0.3s;
+            position: relative;
+        }
+
+        .stars i{
+            color: #842A2A;
+        }
+
+        hr{
+            border-color: #842A2A;
+        }
+
+        .card.active{
+            border-top: 5px solid #842A2A; /* Contoh efek */
+            border-bottom: 5px solid #842A2A;
+            border-left: none;
+            border-right: none;
+            transition: transform 0.3s, border-color 0.3s;
+            transform: translateX(0) scale(1.1); /* Tidak bergeser, diperbesar */
+            z-index: 5;
+        }
+
+
+.card.left {
+    transform: translateX(50px) scale(1); /* Bergeser ke kiri */
+    z-index: 3; /* Di bawah elemen tengah */
+}
+
+.card.right {
+    transform: translateX(-50px) scale(1); /* Bergeser ke kanan */
+    z-index: 2; /* Di bawah elemen tengah */
+}
+
+    section .swiper-pagination-bullet{
+        background-color: #842A2A;
+    }
+
+    .pagination_{
+        position: absolute;
+        width: calc( 100% - 70% );
+        
+    }
+
+    .pagination_ div[class^="swiper-button"]::after{
+        display: none;
+    }
+
+    .pagination_ i{
+        font-size: 35px;
+        color: #842A2A;
+    }
+    .my-carousel {
+        position: relative;
+      }
+    
+      .owl-nav .owl-prev, .owl-nav .owl-next {
+        position: absolute;
+        color: #FFF6DF !important; /* Warna tombol */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%!important;
+        top: 50%;
+        font-size: 30px!important;
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent !important; /* Hilangkan background default */
+        border: none; /* Jika ada border bawaan */
+    }
+    
+    .owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+        background-color: transparent !important; /* Hilangkan efek hover */
+        color: #FFF6DF !important; /* Warna tetap */
+        box-shadow: none !important; /* Hilangkan efek shadow */
+    }
+    
+    .owl-nav .owl-prev {
+        left: 930px;
+        top: 400px;
+    }
+    
+    .owl-nav .owl-next {
+        right: 150px;
+        top: 400px;
+    }
+
+    .mySwiper3D {
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+
+    
